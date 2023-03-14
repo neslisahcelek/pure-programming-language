@@ -1,5 +1,8 @@
 # Programming Language Mrt
-Group Members: ..., ...
+Group Members: 
+Mustafa ARINMIŞ
+Neslişah ÇELEK
+Salih DURAK
 
 
 ## Syntax
