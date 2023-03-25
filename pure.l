@@ -22,13 +22,13 @@ true|false                  printf("BOOLEAN\n");
 \"[^"]*\"                   printf("STRING\n");
 [_a-zA-Z][_a-zA-Z0-9]*      printf("IDENTIFIER\n");
 \>.*\<                      printf("COMMENT_MULTI\n");
-\>.*                      printf("COMMENT_LINE\n");
+\>.*                        printf("COMMENT_LINE\n");
 
 
-"("   			    printf("PARANTHESIS_OPEN\n");
-")"   		            printf("PARANTHESIS_CLOSE\n");
-"{"   	                    printf("CURLY_OPEN\n");
-"}"                         printf("CURLY_CLOSE\n");
+"("   			                printf("PARANTHESIS_OPEN\n");
+")"   		                  printf("PARANTHESIS_CLOSE\n");
+"["                         printf("ANGLE_OPEN\n");
+"]"                         printf("ANGLE_CLOSE\n");
 
 \ |\t|\n                    ;
 [.]+			    printf("Syntax Error!\n");
