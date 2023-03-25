@@ -36,7 +36,7 @@ Group Members:
 ```
 
 ```
-<assignment_exp> : IDENTIFIER '=' <exp>
+<assignment_exp> : set IDENTIFIER <exp>
 ```
 
 ```
@@ -49,8 +49,6 @@ Group Members:
 	   | log <term> <term>
 	   | floor <term> <term>
 	   | ceil <term> <term>
-	   | '-' LITERAL
-	   | '-' IDENTIFIER
 	   | PARANTHESIS_OPEN <term> PARANTHESIS_CLOSE
 	   | <logic_exp>
 	   | LITERAL
@@ -74,16 +72,3 @@ Group Members:
 ## Design Decisions
 ## Example Program: FizzBuzz
 
-\<prog\> : \<stmt\> | \<stmts\>
-
-\<stmt\> : \<expr\> ...
-
-## Explanations about the language
-
-- Takes a file with extension .mrt
-- Has if, while, ...
-
-- You can run your program by running the makefile and giving it to myprog as input:
-
-make
-./myprog < example.nms
