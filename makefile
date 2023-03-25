@@ -1,6 +1,6 @@
-myprog: myprog.l
-	lex myprog.l
-	gcc -o myprog lex.yy.c -ll
+myprog: pure.l
+	lex pure.l
+	gcc -o pure lex.yy.c -ll
 
 clean:
-	rm myprog lex.yy.c
+	rm pure lex.yy.c
