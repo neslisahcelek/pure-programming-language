@@ -25,11 +25,11 @@ true|false                  printf("BOOLEAN\n");
 \>.*                        printf("COMMENT_LINE\n");
 
 
-"("   			                printf("PARANTHESIS_OPEN\n");
-")"   		                  printf("PARANTHESIS_CLOSE\n");
+"("   			            printf("PARANTHESIS_OPEN\n");
+")"   		                printf("PARANTHESIS_CLOSE\n");
 "["                         printf("ANGLE_OPEN\n");
 "]"                         printf("ANGLE_CLOSE\n");
 
 \ |\t|\n                    ;
-[.]+			    printf("Syntax Error!\n");
+[.]+			            printf("Syntax Error!\n");
 %%
