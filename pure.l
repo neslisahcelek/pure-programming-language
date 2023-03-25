@@ -10,11 +10,18 @@ write                       printf("WRITE\n");
 stdin                       printf("STDIN\n");
 stdout                      printf("STDOUT\n");
 
-"("   				        printf("PARANTHESIS_OPEN\n");
-")"   				        printf("PARANTHESIS_CLOSE\n");
-"{"   				        printf("CURLY_OPEN\n");
-"}"  				        printf("CURLY_CLOSE\n");
+boolean                     printf("TYPE_BOOLEAN\n");
+double                      printf("TYPE_DOUBLE\n");
+string                      printf("TYPE_STRING\n");
+int                         printf("TYPE_INTEGER\n");
+set                         printf("ASSIGN\n");
 
-\ |\t|\n                      ;
-[.]+			            printf("Syntax Error!\n");
+
+"("   			    printf("PARANTHESIS_OPEN\n");
+")"   		            printf("PARANTHESIS_CLOSE\n");
+"{"   	                    printf("CURLY_OPEN\n");
+"}"                         printf("CURLY_CLOSE\n");
+
+\ |\t|\n                    ;
+[.]+			    printf("Syntax Error!\n");
 %%
