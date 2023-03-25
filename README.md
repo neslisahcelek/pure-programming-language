@@ -19,4 +19,4 @@ Salih DURAK
 - You can run your program by running the makefile and giving it to myprog as input:
 
 make
-./myprog < example.mrt
+./myprog < example.nms
