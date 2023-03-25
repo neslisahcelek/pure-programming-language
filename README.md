@@ -1,8 +1,6 @@
 # Programming Language Mrt
 Group Members: 
-Mustafa ARINMIŞ
-Neslişah ÇELEK
-Salih DURAK
+Mustafa ARINMIŞ | Neslişah ÇELEK | Salih DURAK
 
 
 ## Syntax
