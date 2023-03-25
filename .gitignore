@@ -1,0 +1,12 @@
+.vscode
+
+# Ignore vim files:
+*~
+*.swp
+*.swo
+
+
+# lexical analyer outputs
+pure 
+lex.yy.c
+
