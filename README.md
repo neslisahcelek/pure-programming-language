@@ -16,15 +16,16 @@ Group Members:
 
 ```
 <statement> : <exp>
-			| print PARANTHESIS_OPEN <exp> PARANTHESIS_CLOSE
-			| while PARANTHESIS_OPEN <logic_exp> PARANTHESIS_CLOSE <statement>
-			| while PARANTHESIS_OPEN <logic_exp> PARANTHESIS_CLOSE CURLY_OPEN <statements> CURLY_CLOSE
-			| if PARANTHESIS_OPEN <exp> PARANTHESIS_CLOSE <statement>
-			| if PARANTHESIS_OPEN <exp> PARANTHESIS_CLOSE CURLY_OPEN <statements> CURLY_CLOSE
+			| print ANGLE_OPEN <exp> ANGLE_CLOSE
+			| while ANGLE_OPEN <logic_exp> ANGLE_CLOSE PARANTHESIS_OPEN <statement> PARANTHESIS_CLOSE
+			| while ANGLE_OPEN <logic_exp> ANGLE_CLOSE PARANTHESIS_OPEN <statements> PARANTHESIS_CLOSE
+			| if ANGLE_OPEN <logic_exp> ANGLE_CLOSE PARANTHESIS_OPEN <statement> PARANTHESIS_CLOSE 
+			| if ANGLE_OPEN <exp> ANGLE_CLOSE PARANTHESIS_OPEN <statements> PARANTHESIS_CLOSE
 			| if PARANTHESIS_OPEN <exp> PARANTHESIS_CLOSE <statement> elif <statement>
 		        | if PARANTHESIS_OPEN <exp> PARANTHESIS_CLOSE CURLY_OPEN <statement> CURLY_CLOSE else CURLY_OPEN <statements> CURLY_CLOSE
-			| fun IDENTIFIER CURLY_OPEN <statements> CURLY_CLOSE
-			| IDENTIFIER FUNC_CALL
+			| fun IDENTIFIER PARANTHESIS_OPEN <statements> PARANTHESIS_CLOSE 
+			| fun IDENTIFIER ANGLE_OPEN <exp> ANGLE_CLOSE PARANTHESIS_OPEN <statements> PARANTHESIS_CLOSE 
+			| IDENTIFIER FUNCTION_CALL
 			| print PARANTHESIS_OPEN LITERAL <exp> PARANTHESIS_CLOSE
 ```
 
@@ -32,7 +33,7 @@ Group Members:
 <exp> : <term>
 	  | <logic_exp>
 	  | <assignment_exp>
-	  | stdin PARANTHESIS_OPEN LITERAL PARANTHESIS_CLOSE
+	  | stdin ANGLE_OPEN LITERAL ANGLE_CLOSE
 ```
 
 ```
@@ -49,7 +50,7 @@ Group Members:
 	   | log <term> <term>
 	   | floor <term> <term>
 	   | ceil <term> <term>
-	   | PARANTHESIS_OPEN <term> PARANTHESIS_CLOSE
+	   | ANGLE_OPEN <term> ANGLE_CLOSE
 	   | <logic_exp>
 	   | LITERAL
 	   | IDENTIFIER
