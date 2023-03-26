@@ -7,15 +7,27 @@ Group Members:
 
 ## Grammar in BNF Form
 ```
-<program> : <functions>
-```
+<program> ->  <function-calls>
 
-```
-<functions> : <function> | <function>, <functions>
-```
+<function-call> -> ( <identifier> <function-args> )
 
-```
-<function> : <exp>
+<function-args> ->  <type> <identifier> | <function-args>  
+
+<statement> -> ( <conditional-statement> ) | ( <function-call> <statement> ) | ( <assignment> <statement> ) | ( return <expression> )
+
+<conditional-statement> -> ( if ( <expression> ) <statement> <statement> )
+
+<expression> -> <identifier> | <literal> | <function-call> | ( <operator> <expression> <expression> )
+
+<literal> -> integer | double | string | boolean
+
+<operator> -> sum | sub |  div | mul | mod | pow | log | floor  ceil | eql | lte | gte | gt |  lt | or | and | not   
+
+<assignment> -> ( set <type> <identifier> <expression> ) | ( set <type> <identifier> <literal> )
+
+<type> -> int | double | string | boolean
+
+<identifier> -> <string>
 ```
 
 
