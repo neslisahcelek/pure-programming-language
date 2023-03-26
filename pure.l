@@ -29,4 +29,27 @@ true|false                  printf("BOOLEAN\n");
 
 \ |\t|\n                    ;
 [.]+			    printf("Syntax Error!\n");
+
+add                         print("ADD\n")
+sub                         print("SUBSTRACT\n")
+div                         print("DIVIDE\n")
+mul                         print("MULTIPLY\n")
+mod                         print("MODULO\n")
+pow                         print("POWER\n")
+log                         print("LOGARITHM\n")
+floor                       print("FLOOR\n")
+ceil                        print("CEIL\n")
+eql                         printf("eql\n");
+lte                         printf("LESS_THAN_OR_EQUALS\n");
+gte                         printf("GREATER_THAN_OR_EQUALS\n");
+gt                          printf("GREATER_THAN\n");
+lt                          printf("LESS_THAN\n");
+
+or                          print("OR\n")
+and                         print("AND\n")
+not                         print("NOT\n")
+
+fun                         printf("FUNCTION\n");
+call                        print("FUNCTION_CALL\n")
+return                      print("RETURN\n")
 %%
