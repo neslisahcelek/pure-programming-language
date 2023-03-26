@@ -4,9 +4,9 @@
             (return ())
             (combo 
                 (switch
-                        ((eql((mod i 15) 0)) (stdout("FizzBuzz")))
-                        ((eql((mod i 3) 0)) (stdout("Fizz")))
-                        ((eql((mod i 5) 0)) (stdout("Buzz")))
+                        ((eql(mod i 15) 0) (stdout("FizzBuzz")))
+                        ((eql(mod i 3) 0) (stdout("Fizz")))
+                        ((eql(mod i 5) 0) (stdout("Buzz")))
                 )
                 (return (fizzBuzz (sum i 1) n))
             )
