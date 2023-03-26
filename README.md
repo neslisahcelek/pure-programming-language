@@ -37,9 +37,10 @@ Group Members:
 ## Design Decisions
 Functional-like language features.
 Properties are expressed functionally.
-(if (eql x 1)(sum x 1)) 
+
+```(if (eql x 1)(sum x 1))```
 instead of 
-if (x == 1){x++;}
+```if (x == 1){x++;}```
 
 We wanted to reduce the use of punctuations, for this: 
 1) We designed structurally without the need for punctuations.  
@@ -73,7 +74,6 @@ Example program is solution for FizzBuzz problem from 1 to 100.
        )
     )
 )
-
 
 (set int n 100)
 (fizzBuzz 1 n)
