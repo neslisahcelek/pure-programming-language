@@ -1,5 +1,3 @@
-.vscode
-
 # Ignore vim files:
 *~
 *.swp
@@ -10,4 +8,9 @@
 # lexical analyer outputs
 purec 
 lex.yy.c
+
+# vs files:
+.vscode
+.vs
+
 
