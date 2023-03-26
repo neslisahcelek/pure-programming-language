@@ -15,5 +15,5 @@
 )
 
 
-(set n 100)
+(set int n 100)
 (fizzBuzz 1 n)
