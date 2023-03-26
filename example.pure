@@ -1,6 +1,6 @@
 (fun fizzBuzz
     (lambda (int i int n ) 
-        if ((eql(i (sum n 1)))
+        (if ((eql(i (sum n 1))))
             (return ())
             (combo 
                 (switch
