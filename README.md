@@ -149,22 +149,24 @@ true|false                  BOOLEAN LITERAL
 Functional-like language features.
 
 Properties are expressed functionally.
-
+```
 ```(if (eql x 1)(sum x 1))```
 instead of 
 ```if (x == 1){x++;}```
-
+```
 We wanted to reduce the use of punctuations, for this: 
-1) We designed structurally without the need for punctuations.  
+1) We designed structurally without the need for punctuations.
+```
 ```(function a b)```
 instead of 
 ```function (a,b)```
-
+```
 2) We used alphabetic characters rather than punctuations as tokens.  
+```
 ```if (gte x 1)```
 instead of 
 ```if (x >= 1)```
-
+```
 We will go to a restriction on the parentheses
 ```
 
