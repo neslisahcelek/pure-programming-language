@@ -51,6 +51,6 @@ true|false                  printf("BOOLEAN\n");
 
 
 \ |\t|\n                    ;
-.*     		            printf("Syntax Error!\n");
+[.]+     		            printf("Syntax Error!\n");
 
 %%
