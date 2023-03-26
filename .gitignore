@@ -8,6 +8,6 @@
 
 
 # lexical analyer outputs
-pure 
+purec 
 lex.yy.c
 
