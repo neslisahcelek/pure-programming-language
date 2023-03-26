@@ -1,9 +1,8 @@
 %%
 if                          printf("IF\n");
-elif                        printf("ELSEIF\n");
-else                        printf("ELSE\n");
-while                       printf("WHILE\n");
-for                         printf("FOR\n");
+switch                      printf("SWITCH\n");
+combo                       printf("COMBO\n");
+
 
 read                        printf("INPUT\n");
 write                       printf("WRITE\n");
@@ -27,8 +26,6 @@ true|false                  printf("BOOLEAN\n");
 
 "("   			    printf("PARANTHESIS_OPEN\n");
 ")"   		            printf("PARANTHESIS_CLOSE\n");
-"["                         printf("ANGLE_OPEN\n");
-"]"                         printf("ANGLE_CLOSE\n");
 
 \ |\t|\n                    ;
 [.]+			    printf("Syntax Error!\n");
