@@ -7,23 +7,25 @@ Group Members:
 
 ## Grammar in BNF Form
 ```
-<program> ->  <function-calls>
+<program> -> <statement>
+
+<statement> -> <assignment> | <function-call> | <conditional-statement> | <return-statement> 
+
+<assignment> -> ( set <type> <identifier> <expression> ) | ( set <type> <identifier> <literal> )
 
 <function-call> -> ( <identifier> <function-args> )
 
 <function-args> ->  <type> <identifier> | <function-args>  
 
-<statement> -> ( <conditional-statement> ) | ( <function-call> <statement> ) | ( <assignment> <statement> ) | ( return <expression> )
-
 <conditional-statement> -> ( if ( <expression> ) <statement> <statement> )
+
+<return-statement> -> ( return <expression> )
 
 <expression> -> <identifier> | <literal> | <function-call> | ( <operator> <expression> <expression> )
 
 <literal> -> integer | double | string | boolean
 
-<operator> -> sum | sub |  div | mul | mod | pow | log | floor  ceil | eql | lte | gte | gt |  lt | or | and | not   
-
-<assignment> -> ( set <type> <identifier> <expression> ) | ( set <type> <identifier> <literal> )
+<operator> -> sum | sub |  div | mul | mod | pow | log | floor | ceil | eql | lte | gte | gt |  lt | or | and | not   
 
 <type> -> int | double | string | boolean
 
@@ -34,7 +36,7 @@ Group Members:
 ## Syntax
 ## Design Decisions
 ## Example Program: FizzBuzz
-Example program is solution for FizzBuzz problem from 1 to 100
+Example program is solution for FizzBuzz problem from 1 to 100.
 ```
 (fun fizzBuzz
     (lambda (int i int n) 
