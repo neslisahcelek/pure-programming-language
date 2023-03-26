@@ -34,69 +34,113 @@ Group Members:
 
 
 ## Syntax
-Condition
+### Condition
+
 if                          IF
+
 switch                      SWITCH
+
 combo                       COMBO
 
-IO
+
+### IO
+
 read                        INPUT
+
 write                       WRITE
+
 stdin                       STDIN
+
 stdout                      STDOUT
 
-Types
+
+### Types
+
 boolean                     TYPE_BOOLEAN
+
 double                      TYPE_DOUBLE
+
 string                      TYPE_STRING
+
 int                         TYPE_INTEGER
+
 set                         ASSIGN
 
-Arithmetic
+
+### Arithmetic
 add                         ADD
+
 sub                         SUBSTRACT
+
 div                         DIVIDE
+
 mul                         MULTIPLY
+
 mod                         MODULO
+
 pow                         POWER
+
 log                         LOGARITHM
+
 floor                       FLOOR
+
 ceil                        CEIL
+
 eql                         EQUAL
+
 lte                         LESS_THAN_OR_EQUALS
-gte                         GREATER_THAN_OR_EQUALS
+
+gte                         GREATER_THAN_OR_EQUALS 
+
 gt                          GREATER_THAN
+
 lt                          LESS_THAN
 
-Logic
+
+### Logic
 or                          OR
+
 and                         AND
+
 not                         NOT
 
-Paranthesis
+
+### Paranthesis
 "("   			            PARANTHESIS_OPEN
+
 ")"   		                PARANTHESIS_CLOSE
 
-Function
+
+### Function
 fun                         FUNCTION
+
 return                      RETURN
+
 lambda                      LAMBDA
 
-Literal
+
+### Literal
 true|false                  BOOLEAN LITERAL
+
 [-+]?[0-9]+                 INTEGER LITERAL 
+
 [-+]?[0-9]+[\.]?[0-9]+      DOUBLE LITERAL
+
 \"[^"]*\"                   STRING LITERAL
 
-Comment
+
+### Comment
 \>.*                        COMMENT
 
-Identifier
+
+### Identifier
+
 [_a-zA-Z][_a-zA-Z0-9]*      IDENTIFIER
 
 
 ## Design Decisions
 Functional-like language features.
+
 Properties are expressed functionally.
 
 ```(if (eql x 1)(sum x 1))```
