@@ -5,35 +5,34 @@ Group Members:
 * Salih DURAK  
 
 
-- ## Grammar in BNF Form
+## Grammar in BNF Form
 ```
-<program> -> <statement>
+<program> ::= <statement>
 
-<statement> -> <assignment> | <function-call> | <conditional-statement> | <return-statement> 
+<statement> ::= <assignment> | <function-call> | <conditional-statement> | <return-statement> 
 
-<assignment> -> ( set <type> <identifier> <expression> ) | ( set <type> <identifier> <literal> )
+<assignment> ::= ( set <type> <identifier> <expression> ) | ( set <type> <identifier> <literal> )
 
-<function-call> -> ( <identifier> <function-args> )
+<function-call> ::= ( <identifier> <function-args> )
 
-<function-args> ->  <type> <identifier> | <function-args>  
+<function-args> ::=  <type> <identifier> | <function-args>  
 
-<conditional-statement> -> ( if ( <expression> ) <statement> <statement> )
+<conditional-statement> ::= ( if ( <expression> ) <statement> <statement> )
 
-<return-statement> -> ( return <expression> )
+<return-statement> ::= ( return <expression> )
 
-<expression> -> <identifier> | <literal> | <function-call> | ( <operator> <expression> <expression> )
+<expression> ::= <identifier> | <literal> | <function-call> | ( <operator> <expression> <expression> )
 
-<literal> -> integer | double | string | boolean
+<literal> ::= integer | double | string | boolean
 
-<operator> -> sum | sub |  div | mul | mod | pow | log | floor | ceil | eql | lte | gte | gt |  lt | or | and | not   
+<operator> ::= sum | sub |  div | mul | mod | pow | log | floor | ceil | eql | lte | gte | gt |  lt | or | and | not   
 
-<type> -> int | double | string | boolean
+<type> ::= int | double | string | boolean
 
-<identifier> -> <string>
+<identifier> ::= <string>
 ```
 
-
-- ## Syntax
+## Syntax
 ### Condition
 ```
 if                          IF
